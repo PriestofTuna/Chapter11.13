@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="430.0" prefWidth="476.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="216.0" minWidth="203.0" prefWidth="210.0" />
+      <ColumnConstraints maxWidth="28.0" minWidth="0.0" prefWidth="7.0" />
+      <ColumnConstraints maxWidth="225.0" minWidth="202.0" prefWidth="212.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="362.0" prefWidth="231.0">
+         <children>
+            <TextField fx:id="NumTxt1" layoutX="14.0" layoutY="50.0" prefHeight="25.0" prefWidth="151.0" promptText="Number 1" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="50.0" />
+            <TextField fx:id="NumTxt2" layoutX="15.0" layoutY="80.0" promptText="Number 2" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="75.0" />
+            <TextField fx:id="NumTxt3" layoutX="14.0" layoutY="105.0" promptText="Number 3" AnchorPane.topAnchor="100.0" />
+            <TextField fx:id="NumTxt4" layoutX="14.0" layoutY="130.0" promptText="Number 4" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="125.0" />
+            <TextField fx:id="NumTxt5" layoutX="14.0" layoutY="155.0" promptText="Number 5" AnchorPane.topAnchor="150.0" />
+            <Button fx:id="button" layoutX="42.0" layoutY="259.0" mnemonicParsing="false" onAction="#numbers" prefHeight="49.0" prefWidth="94.0" text="Button" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="378.0" prefWidth="211.0" GridPane.columnIndex="2">
+         <children>
+            <TextField fx:id="NumTxt6" layoutX="45.0" layoutY="50.0" prefHeight="25.0" prefWidth="153.0" promptText="Number 6" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0" />
+            <TextField fx:id="NumTxt7" layoutX="45.0" layoutY="75.0" promptText="Number 7" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="75.0" />
+            <TextField fx:id="NumTxt8" layoutX="45.0" layoutY="100.0" promptText="Number 8" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="100.0" />
+            <TextField fx:id="NumTxt9" layoutX="45.0" layoutY="125.0" promptText="Number 9" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="125.0" />
+            <TextField fx:id="NumTxt10" layoutX="45.0" layoutY="150.0" promptText="Number 10" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="150.0" />
+            <TextArea fx:id="output" editable="false" layoutX="6.0" layoutY="270.0" prefHeight="137.0" prefWidth="200.0" promptText="Output" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
